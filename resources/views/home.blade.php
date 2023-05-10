@@ -16,9 +16,21 @@
 </head>
 
 <body>
-
-
-
+    <div class="card-container">
+        @foreach($movies as $movie)
+        <div class="card">
+            <h2 class="title">
+                {{$movie['title']}}
+            </h2>
+            <h4 class="subtitle">
+                {{$movie['original_title']}}
+            </h4>
+            <span class="nationality">{{$movie['nationality']}}</span>
+            <span class="date">{{$movie['date']}}</span>
+            <span class="vote">{{$movie['vote']}}</span>
+        </div>
+        @endforeach
+    </div>
 </body>
 
 </html>
