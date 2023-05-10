@@ -1,1 +1,18 @@
 @import '~bootstrap/scss/bootstrap';
+
+.container{
+  h1{
+    text-align: center;
+    text-transform: uppercase;
+    padding: 40px 0;
+  }
+  .card-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    .card{
+      width: calc(100% / 5 - 20px);
+    }
+  }
+}
